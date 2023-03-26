@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 console.log("arrancando con fuerza")
+app.use(express.static('static'))
 
 app.get('/', function (req, res) {
     console.log("soy el index")
@@ -9,4 +10,3 @@ app.get('/', function (req, res) {
 
 app.listen(3000)
 
-app.use(express.static('static'))
