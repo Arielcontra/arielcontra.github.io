@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios</title>
+</head>
+<body>
+    <h1>Ejercicios</h1>
+    <script>
+                
+        //array numeros
+        const numArray = [123,456]
+
+        //suma
+        let suma = 0
+        
+        for (let i = 0; i < numArray.length; i++) {
+            suma += numArray [i];
+        }
+
+        //combertir resultado de la suma en string
+        let sumaAString = suma.toString ();
+
+        //combertir string en array
+        const stringAArray = sumaAString.split ("")
+
+        //invertir orden del array
+        const invertirArray = stringAArray.reverse ("")
+
+        //combertir un array en un string
+        const arrayAString = invertirArray.join ("");
+
+        //combertir un string en un numero entero
+        let resultado = parseInt (arrayAString);
+
+        console.log (resultado);
+
+    </script>
+</body>
+</html>
+
