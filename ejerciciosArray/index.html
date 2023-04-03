@@ -8,6 +8,12 @@
     <h1>Ejercicios</h1>
     <script>
                 
+        /*  
+        //ejercicio 1
+        //Suma invertida
+        //consigna:
+        //Escribir una función que reciba dos números enteros positivos y retorne su suma invertida.
+        //Ayuda un int se puede pasar a string y viceversa     
         //array numeros
         const numArray = [123,456]
 
@@ -33,8 +39,58 @@
         //combertir un string en un numero entero
         let resultado = parseInt (arrayAString);
 
-        console.log (resultado);
+        console.log (resultado);*/
+        
 
+
+        //ejercicio 2
+        //Número perfecto
+        //consigna:
+        //Escribir una función que reciba un número entero y devuelva FALSE si el número es igual 
+        //a la suma de sus divisores sin contarse a el mismo. y TRUE en caso contrario.
+        
+        let numero = prompt("ingresa un numero");
+        const numeroPerfecto = es_numero_perfecto(numero);
+        alert("Es numero perfecto?? "+numeroPerfecto);
+        console.log(numeroPerfecto);
+
+        function es_numero_perfecto(numero) {
+            const divisores = calcularDivisores(numero);
+            const suma = sumaDivisores(divisores);
+            const comprobacion = comprobacionNum(suma);
+
+            function calcularDivisores(numero) {
+                let divisores = [];
+                
+                for (let i = 1; i < numero; i++) {
+                    if (numero % i == 0) {
+                        divisores.push(i);
+                        }
+                    }
+                return divisores;
+            }
+
+            function sumaDivisores(divisores) {
+                let suma = 0;
+            
+                for (let i = 0; i < divisores.length; i++) {
+                    suma += divisores [i];
+                }
+                return suma;
+            }
+            
+            function comprobacionNum(suma) {
+                if (numero == suma) {
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+
+            return comprobacion;
+        }
+        
     </script>
 </body>
 </html>
