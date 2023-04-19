@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Suma acumulada de un array</title>
+    <style>
+        body {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>EJERCICIO 9</h1>
+    <h2>SUMA ACUMULADA DE UN ARRAY</h2>
+    <p>Consigna:<br/>Dado un arreglo nums. Definimos la suma acumulada de un array como runningSum[i] = sum(nums[0]…nums[i]). Devuelve la suma acumulada de nums.
+        <br/>
+        Ejemplo 1:
+        <br/>
+        Input: nums = [1,2,3,4]
+        <br/>
+        Output: [1,3,6,10]
+        <br/>
+        Explanation: La suma acumulada se obtiene de la siguiente manera: [1, 1+2, 1+2+3, 1+2+3+4]
+        <br/>     
+        Ejemplo 2:
+        <br/> 
+        Input: nums = [1,1,1,1,1]
+        <br/> 
+        Output: [1,2,3,4,5]
+        <br/> 
+        Explanation: La suma acumulada se obtiene de la siguiente manera: [1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1]
+        <br/>
+        Ejemplo 3:
+        <br/>
+        Input: nums = [3,1,2,10,1]
+        <br/>
+        Output: [3,4,6,16,17]
+        <br/> 
+        Explanation: La suma acumulada se obtiene de la siguiente manera: [3, 3+1, 3+1+2, 3+1+2+10, 3+1+2+10+1] 
+        </p>
+    
+    <script>
+
+        //ejercicio 1
+
+        const arr = [1,2,3,4];
+        const sumarr = sum(arr)
+        console.log("ejercicio 1 = " + sumarr)
+
+        function sum(arr){
+            
+            let suma = 0;
+            let resultado = []
+            
+            for (let i = 0; i < arr.length; i++) {
+                suma = suma + arr[i];
+                resultado.push(suma)
+                }
+                        
+            return resultado
+        }
+
+        //ejercicio 2
+
+        const arr2 = [1,1,1,1,1];
+        const sumarr2 = sum(arr2)
+        console.log("ejercicio 2 = " + sumarr2)
+
+        function sum(arr2){
+            
+            let suma = 0;
+            let resultado = []
+            
+            for (let i = 0; i < arr2.length; i++) {
+                suma = suma + arr2[i];
+                resultado.push(suma)
+                }
+                        
+            return resultado
+        }
+
+        //ejercicio 3
+
+        const arr3 = [3,1,2,10,1];
+        const sumarr3 = sum(arr3)
+        console.log("ejercicio 3 = " + sumarr3)
+
+        function sum(arr3){
+            
+            let suma = 0;
+            let resultado = []
+            
+            for (let i = 0; i < arr3.length; i++) {
+                suma = suma + arr3[i];
+                resultado.push(suma)
+                }
+                        
+            return resultado
+        }
+
+    </script>
+</body>
+</html>
