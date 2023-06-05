@@ -26,7 +26,7 @@ for (let i = 0; i < btnSelected.length; i++) {
 
 btn1.addEventListener("click", function() {
     btnSubmit.addEventListener("click",function(){
-        window.location.href = "challenges/exercise_01/desktop-thank-you-state.html";
+        window.location.href = "/challenges/exercise_01/desktop-thank-you-state.html";
         dynamicText.innerHTML = "You selected 1 out of 5";
         
     });
@@ -35,7 +35,7 @@ btn1.addEventListener("click", function() {
 
 btn2.addEventListener("click", function() {
     btnSubmit.addEventListener("click",function(){
-        window.location.href = "challenges/exercise_01/desktop-thank-you-state.html";
+        window.location.href = "/challenges/exercise_01/desktop-thank-you-state.html";
         dynamicText.innerHTML = "You selected 2 out of 5";
     });
     
@@ -43,7 +43,7 @@ btn2.addEventListener("click", function() {
 
 btn3.addEventListener("click", function() {
     btnSubmit.addEventListener("click",function(){
-        window.location.href = "challenges/exercise_01/desktop-thank-you-state.html";
+        window.location.href = "/challenges/exercise_01/desktop-thank-you-state.html";
         dynamicText.innerHTML = "You selected 3 out of 5";
     });
     
@@ -51,7 +51,7 @@ btn3.addEventListener("click", function() {
 
 btn4.addEventListener("click", function() {
     btnSubmit.addEventListener("click",function(){
-        window.location.href = "challenges/exercise_01/desktop-thank-you-state.html";
+        window.location.href = "/challenges/exercise_01/desktop-thank-you-state.html";
         dynamicText.innerHTML = "You selected 4 out of 5";
     });
     
@@ -59,7 +59,7 @@ btn4.addEventListener("click", function() {
 
 btn5.addEventListener("click", function() {
     btnSubmit.addEventListener("click",function(){
-        window.location.href = "challenges/exercise_01/desktop-thank-you-state.html";
+        window.location.href = "/challenges/exercise_01/desktop-thank-you-state.html";
         dynamicText.innerHTML = "You selected 5 out of 5";
     });
     
