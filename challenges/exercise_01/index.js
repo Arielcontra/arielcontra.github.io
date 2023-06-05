@@ -6,6 +6,7 @@ const btn5 = document.getElementById("5");
 const btnSubmit = document.getElementById("submit");
 const dynamicText = document.querySelector("dynamicText");
 const btnSelected = document.getElementsByClassName("button");
+// const select = document.getElementById("select");
 
 
 function buttonSelected() {
@@ -63,3 +64,25 @@ btn5.addEventListener("click", function() {
     });
     
 });
+
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     let select = document.getElementById("select");
+//     select.innerHTML = " 5 ";
+//   });
+
+// function printText(){
+    
+//     if (btn1.checked){
+//         select.innerHTML = "1"
+//     } else if (btn2.checked){
+//         select.innerHTML = "2"
+//     } else if (btn3.checked){
+//         select.innerHTML = "3"
+//     } else if (btn4.checked){
+//         select.innerHTML = "4"
+//     } else if (btn5.checked){
+//         select.innerHTML = "5"
+//     } 
+// }
+
