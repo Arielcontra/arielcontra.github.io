@@ -1,6 +1,21 @@
-body {
+
+
+  /* Desktop */
+@media screen and (max-width: 1440px) {
+  body {
     background-color: hsl(0, 100%, 74%);
     background-image: url("/intro-component-with-signup-form-master/images/bg-intro-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+  body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("/intro-component-with-signup-form-master/images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
