@@ -3,11 +3,72 @@
   /* Desktop */
 @media screen and (max-width: 1440px) {
   body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0%;
     background-color: hsl(0, 100%, 74%);
     background-image: url("/intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    /* background-image: url("/intro-component-with-signup-form-master/design/active-states.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
   }
+
+  .description {
+    background-color: hsla(0, 13%, 48%, 0.509);
+    width: 440px;
+    height: 185px;
+    margin-left: 130px;
+    margin-top: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    position: absolute;
+
+  }
+
+  .rightBox{
+    background-color: hsla(0, 6%, 41%, 0.509);
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 50%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .offer {
+    background-color: hsla(0, 65%, 19%, 0.509);
+    width: 475px;
+    height: 53px;
+    border-radius: 10px;
+    /* margin-left: 635px; */
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
+  .dataBox{
+    background-color: hsla(0, 65%, 19%, 0.509);
+    display: inline-block;
+    width: 475px;
+    height: auto;
+    border-radius: 10px;
+    /* margin-left: 635px; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  }
+
 }
 
 /* Mobile */
