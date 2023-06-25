@@ -1,10 +1,10 @@
 import IconStar from '../dist/components/iconStart'
 import SelectScore from '../dist/components/selectScore'
-import Description from '../dist/components/description'
+import Text from '../dist/components/text'
 import IllustrationThankYou from '../dist/components/illustrationThankYou'
 import Submit from '../dist/components/submit'
 import DynamicText from '../dist/components/dynamicText'
-import Gratitude from '../dist/components/gratitude'
+import Text2 from '../dist/components/text2'
 import './App.css'
 
 function App() {
@@ -13,14 +13,14 @@ function App() {
      <div className="father">
         <div className="main" id="index" >
             <IconStar/>
-            <Description/>
+            <Text/>
             <SelectScore/>
             <Submit/>
         </div>
         <div className="main" id="success" style={{display: 'none'}}>
             <IllustrationThankYou/>
             <DynamicText/>
-            <Gratitude/>
+            <Text2/>
         </div>
     </div>
     </>
