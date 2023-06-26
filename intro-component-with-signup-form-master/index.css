@@ -1,16 +1,10 @@
 body {
-  /* width: 100vw;
-    height: 100vh; */
   width: 1440px;
   height: 800px;
-  margin: 0%;
-  /* background-color: hsl(0, 100%, 74%); */
-  /* background-image: url("/intro-component-with-signup-form-master/images/bg-intro-desktop.png"); */
-  background-image: url("/intro-component-with-signup-form-master/design/active-states.jpg");
-  /* background-image: url("/intro-component-with-signup-form-master/design/desktop-design.jpg"); */
+  background-color: hsl(0, 100%, 74%);
+  background-image: url("/intro-component-with-signup-form-master/images/bg-intro-desktop.png"); 
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   display: flex;
   align-items: center;
   font-family: 'Poppins', sans-serif;
@@ -68,7 +62,7 @@ h1 {
   width: 542px;
   height: 60px;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px hsla(0, 65%, 19%, 0.509);
+  box-shadow: 0px 10px 0px hsla(0, 53%, 51%, 0.509);
   color: hsl(0, 0%, 100%);
   ;
   letter-spacing: -0.4px;
@@ -87,7 +81,7 @@ h1 {
   width: 542px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px hsla(0, 65%, 19%, 0.509);
+  box-shadow: 0px 10px 0px hsla(0, 53%, 51%, 0.509);
   margin-left: 14px;
   display: flex;
   flex-direction: column;
@@ -111,6 +105,8 @@ input {
   height: 48px;
   border-radius: 5px;
   text-indent: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
 }
 
 .warning {
@@ -169,4 +165,19 @@ button {
 a {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
+}
+
+
+.iconFirstName{
+  display:block;
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 15px;
+}
+
+.icon{
+  display:block;
+  position: absolute;
+  margin-left: 410px;
+  margin-top: 35px;
 }
