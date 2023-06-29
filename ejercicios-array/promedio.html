@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promedio</title>
+    <style>
+        body {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>EJERCICIO 8</h1>
+    <h2>PROMEDIO</h2>
+    <p>Consigna:<br/>Escribir una función que reciba un array de números enteros positivos entre los que hay un -1 (menos uno) y retorne el promedio de los valores del conjunto hasta el valor -1 (redondeado a 2 decimales).<br/>Ejemplo: array [8, 12, 9, -1, 7, 20] retornaría 9.67<br/>Ejemplo: array [4, 6, 2, 1, -1, 13, 12, 20] retornaría 3.25<br/>Ejemplo: array [5, 3, 7, 9, 10, 4, -1, 6] retornaría 6.33</p>
+    
+    <script>
+
+        //ejercicio 1
+
+        const arr = [8, 12, 9, -1, 7, 20];
+        const promedio1 = promedio(arr)
+        console.log("ejercicio 1 = " + promedio1)
+
+        function promedio(arr){
+            // suma los numeros hasta encontrarse con uno negativo
+            let suma = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < 0){
+                    break;
+                }
+            suma += arr[i];
+            }
+            //calcula cantidad de numero hasta encontrarse con uno negativo
+            let longitud = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < 0){
+                    break;
+                }
+            longitud++;
+            } 
+            //calcula promedio
+            let resultado = suma / longitud;
+            //redondea
+            let resultadoRedondeado = resultado.toFixed(2);
+            
+            return resultadoRedondeado
+        }
+
+
+        //ejercicio 2
+
+        const arr2 = [4, 6, 2, 1, -1, 13, 12, 20];
+        const promedio2 = promedio(arr2)
+        console.log("ejercicio 2 = " + promedio2)
+
+        function promedio(arr2){
+            // suma los numeros hasta encontrarse con uno negativo
+            let suma = 0;
+            for (let i = 0; i < arr2.length; i++) {
+                if (arr2[i] < 0){
+                    break;
+                }
+            suma += arr2[i];
+            }
+            //calcula cantidad de numero hasta encontrarse con uno negativo
+            let longitud = 0;
+            for (let i = 0; i < arr2.length; i++) {
+                if (arr2[i] < 0){
+                    break;
+                }
+            longitud++;
+            } 
+            //calcula promedio
+            let resultado = suma / longitud;
+            //redondea
+            let resultadoRedondeado = resultado.toFixed(2);
+            
+            return resultadoRedondeado
+        }
+
+        //ejercicio 3
+
+        const arr3 = [5, 3, 7, 9, 10, 4, -1, 6];
+        const promedio3 = promedio(arr3)
+        console.log("ejercicio 3 = " + promedio3)
+
+        function promedio(arr3){
+            // suma los numeros hasta encontrarse con uno negativo
+            let suma = 0;
+            for (let i = 0; i < arr3.length; i++) {
+                if (arr3[i] < 0){
+                    break;
+                }
+            suma += arr3[i];
+            }
+            //calcula cantidad de numero hasta encontrarse con uno negativo
+            let longitud = 0;
+            for (let i = 0; i < arr3.length; i++) {
+                if (arr3[i] < 0){
+                    break;
+                }
+            longitud++;
+            } 
+            //calcula promedio
+            let resultado = suma / longitud;
+            //redondea
+            let resultadoRedondeado = resultado.toFixed(2);
+            
+            return resultadoRedondeado
+        }
+
+       
+    </script>
+</body>
+</html>
+

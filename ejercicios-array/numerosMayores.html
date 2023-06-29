@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Números mayores</title>
+    <style>
+        body {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>EJERCICIO 3</h1>
+    <h2>NUMEROS MAYORES</h2>
+    <p>Consigna:<br/>Escribir una función que reciba un conjunto de números enteros y además un número entero n, y devuelva un conjunto con los números que son mayores a n en el mismo orden que aparecen.<br/>Ejemplo ([3,6,2,4,7,1,8],6) retornaría [7,8].<br/>Ejemplo ([3,6,2,4,7,1,8],3) retornaría [6,4,7,8].</p>
+    
+    <script>
+        //ejercicio 1
+        const arr = [3,6,2,4,7,1,8]
+        const n = 6
+        const num_mayores = numeros_mayores(arr,n)
+        console.log("ejercicio 1: " + num_mayores)
+        function numeros_mayores(arr,n) {
+           let num_mayores = [];
+           for (let i = 0; i < arr.length; i++) {
+                let current_number = arr[i]
+                if (current_number > n) {
+                    num_mayores.push(current_number)
+                }
+           }
+           return num_mayores
+        }
+        
+        // ejercicio 2
+        
+        const arr2 = [3,6,2,4,7,1,8]
+        const n2 = 3
+        const num_mayores_simple = numeros_mayores_simple(arr2,n2)
+        console.log("ejercicio 2: " + num_mayores_simple);
+        function numeros_mayores_simple(arr2,n2) {
+        let num_mayores_simple = arr2.filter(number => number > n2 );
+        return num_mayores_simple
+        }
+        
+    </script>
+</body>
+</html>
+
